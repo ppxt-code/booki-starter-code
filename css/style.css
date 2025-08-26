@@ -121,6 +121,56 @@ a {
     margin-bottom: 5px;
 }
 
+/*****    header    ******/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    /*gap: 68px;*/
+}
+header nav ul li {
+    margin-left: 68px;
+}
+header img {
+    height: 19px;
+    padding: 30px;
+}
+
+.header-links:hover {
+    color: #0065FC;
+}
+
+.header-links {
+    position: relative;
+    color: black;
+}
+
+.header-links::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -16px;
+    /* décale la ligne vers le haut */
+    height: 2px;
+    /* épaisseur de la ligne */
+    background: #0065FC;
+    opacity: 0;
+    /* invisible par défaut */
+}
+
+.header-links:hover::before {
+    opacity: 1;
+    /* rend visible la ligne au hover */
+}
+
+
 
 
 
@@ -163,5 +213,37 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    /***** header *****/
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-links::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 32px;
+        /* décale la ligne vers le haut */
+        height: 2px;
+        /* épaisseur de la ligne */
+        background: #0065FC;
+        opacity: 0;
+        /* invisible par défaut */
+    }
+    header nav {
+        width:100%;
+    }
+    header nav ul {
+        padding:0;
+    }
+    header nav ul li {
+        margin-left: 0px;
+        width:100%;
+    }
+    header nav ul li a{
+        display:block;
+        text-align:center;
+    }
 }
