@@ -291,21 +291,70 @@ i.fa-solid.fa-magnifying-glass {
     align-items: center;
     gap: 10px;
 }
+
 .font16 {
     font-size: 16px;
 }
+
 .fa-circle-info {
     color: white;
     background-color: #0065FC;
     border-radius: 50%;
-    border : 1px solid #D9D9D9;
+    border: 1px solid #D9D9D9;
 }
 
+/***** Hebergements ****/
+.hebergements {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.main-cards {
+    display: flex;
+}
 
+.cardmain {
+    display: flex;
+    flex-direction: column;
+    height: 207.25px;
+}
 
+.cardmain img {
+    object-fit: cover;
+    height: 59.8%;
+    width: 243px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
-/* Le code ci-dessous correspond à la version responsive uniquement */
+.cardmain .card-content {
+    height: 40.2%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.card-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-txt h3 {
+    margin: 0;
+}
+
+.card-txt p {
+    margin: 0;
+}
+
+.populaires-cards .card-subtitle, .main-cards .card-subtitle {
+    font-size: 14px;
+}
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
