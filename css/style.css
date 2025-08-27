@@ -146,11 +146,11 @@ header img {
     color: #0065FC;
 }
 
+/* overline of .header-links */
 .header-links {
     position: relative;
     color: black;
 }
-
 .header-links::before {
     content: "";
     position: absolute;
@@ -164,7 +164,6 @@ header img {
     opacity: 0;
     /* invisible par défaut */
 }
-
 .header-links:hover::before {
     opacity: 1;
     /* rend visible la ligne au hover */
@@ -215,6 +214,7 @@ header img {
 @media (max-width: 767.98px) {
 
     /***** header *****/
+    /* underline of .header-links */
     header {
         flex-direction: column;
         align-items: center;
@@ -232,6 +232,7 @@ header img {
         opacity: 0;
         /* invisible par défaut */
     }
+    /* align header <a> */
     header nav {
         width:100%;
     }
