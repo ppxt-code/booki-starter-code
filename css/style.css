@@ -159,14 +159,18 @@ header img {
     position: absolute;
     left: 0;
     right: 0;
-    top: -16px;      /* shifts line to the top */
-    height: 2px;     /* line's thickness */
+    top: -16px;
+    /* shifts line to the top */
+    height: 2px;
+    /* line's thickness */
     background: #0065FC;
-    opacity: 0;      /* non visible by default */
+    opacity: 0;
+    /* non visible by default */
 }
 
 .header-links:hover::before {
-    opacity: 1;     /* render line at hover */
+    opacity: 1;
+    /* render line at hover */
 }
 
 /* main */
@@ -189,6 +193,7 @@ main {
     height: 49px;
     margin: 24px 0px;
 }
+
 .searchbar i {
     width: 50px;
     border-top-left-radius: 15px;
@@ -198,18 +203,22 @@ main {
     justify-content: center;
     align-items: center;
 }
+
 i.fa-solid.fa-location-dot {
     color: black;
 }
+
 .searchbar-txt {
     background-color: white;
     border: 1px solid #F2F2F2;
     outline: none;
     padding: 15px 16px;
 }
+
 .searchbar-txt::placeholder {
     color: black;
 }
+
 .searchbar-button {
     color: white;
     border-top-right-radius: 15px;
@@ -219,50 +228,77 @@ i.fa-solid.fa-location-dot {
     outline: none;
     padding: 15px 16px;
 }
+
 .font18 {
     font-size: 18px;
     font-weight: bold;
 }
+
 .searchbar-button span {
     display: inline;
 }
+
 .searchbar-button i {
     display: none;
 }
+
 i.fa-solid.fa-magnifying-glass {
     color: white;
     background-color: #0065FC;
 }
 
 /* filter bar */
-.filterbar, .div-filtre {
+.filterbar,
+.div-filtre {
     display: flex;
     gap: 15px;
 }
+
 .div-filtre2 {
     display: flex;
     gap: 15px;
 }
+
 .subtitle {
-    display:flex;
+    display: flex;
     align-items: center;
 }
+
 .filterbutton {
-    display:inline-flex;
-    flex-direction:row;
-    align-items:center;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     border-radius: 25px;
-    padding: 10px; /*4px 19px;*/
+    padding: 10px;
+    /*4px 19px;*/
     border: 2px solid #D9D9D9;
     gap: 10px;
 }
+
 .filterbutton:hover {
     background-color: #DEEBFF;
 }
+
 .font17 {
     font-size: 17px;
     font-weight: bold;
+}
+
+/* info bar */
+.infobar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.font16 {
+    font-size: 16px;
+}
+.fa-circle-info {
+    color: white;
+    background-color: #0065FC;
+    border-radius: 50%;
+    border : 1px solid #D9D9D9;
 }
 
 
@@ -304,7 +340,7 @@ i.fa-solid.fa-magnifying-glass {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
-    
+
     /***** Info group ****/
     /* filter bar */
     .filterbar {
@@ -360,14 +396,17 @@ i.fa-solid.fa-magnifying-glass {
     .searchbar-button span {
         display: none;
     }
+
     .searchbar-button i {
         display: inline;
     }
+
     .searchbar-button {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
         box-shadow: 0 3px 0 0 #D9D9D9;
     }
+
     /* filter bar */
     .div-filtre {
         flex-direction: column;
