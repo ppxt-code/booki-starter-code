@@ -134,12 +134,14 @@ header nav ul {
     list-style: none;
     /*gap: 68px;*/
 }
+
 header nav ul li {
     margin-left: 68px;
 }
+
 header img {
     height: 19px;
-    padding: 30px;
+    padding: 30px 0px;
 }
 
 .header-links:hover {
@@ -151,27 +153,87 @@ header img {
     position: relative;
     color: black;
 }
+
 .header-links::before {
     content: "";
     position: absolute;
     left: 0;
     right: 0;
-    top: -16px;
-    /* décale la ligne vers le haut */
-    height: 2px;
-    /* épaisseur de la ligne */
+    top: -16px;      /* shifts line to the top */
+    height: 2px;     /* line's thickness */
     background: #0065FC;
-    opacity: 0;
-    /* invisible par défaut */
+    opacity: 0;      /* non visible by default */
 }
+
 .header-links:hover::before {
-    opacity: 1;
-    /* rend visible la ligne au hover */
+    opacity: 1;     /* render line at hover */
 }
 
 
+/***** Info group ****/
+.info {
+    margin-top: 35px;
+}
+/* search bar */
+.searchbar {
+    display: flex;
+    border-radius: 15px;
+    height: 49px;
+    margin: 24px 0px;
+}
 
+.searchbar i {
+    width: 50px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+i.fa-solid.fa-location-dot {
+    color: black;
+}
+
+.searchbar-txt {
+    background-color: white;
+    border: 1px solid #F2F2F2;
+    outline: none;
+    padding: 15px 16px;
+}
+
+.searchbar-txt::placeholder {
+    color: black;
+}
+
+.searchbar-button {
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #0065FC;
+    border: none;
+    outline: none;
+    padding: 15px 16px;
+}
+
+.font18 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.searchbar-button span {
+    display: inline;
+}
+
+.searchbar-button i {
+    display: none;
+}
+
+i.fa-solid.fa-magnifying-glass {
+    color: white;
+    background-color: #0065FC;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
@@ -219,6 +281,7 @@ header img {
         flex-direction: column;
         align-items: center;
     }
+
     .header-links::before {
         content: "";
         position: absolute;
@@ -232,19 +295,36 @@ header img {
         opacity: 0;
         /* invisible par défaut */
     }
+
     /* align header <a> */
     header nav {
-        width:100%;
+        width: 100%;
     }
+
     header nav ul {
-        padding:0;
+        padding: 0;
     }
+
     header nav ul li {
         margin-left: 0px;
-        width:100%;
+        width: 100%;
     }
-    header nav ul li a{
-        display:block;
-        text-align:center;
+
+    header nav ul li a {
+        display: block;
+        text-align: center;
+    }
+
+    /***** Info group ****/
+    /* search bar */
+    .searchbar-button span {
+        display: none;
+    }
+    .searchbar-button i {
+        display: inline;
+    }
+    .searchbar-button {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
     }
 }
