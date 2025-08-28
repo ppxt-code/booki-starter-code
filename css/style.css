@@ -367,6 +367,36 @@ i.fa-solid.fa-magnifying-glass {
     font-size: 14px;
 }
 
+/*****    activites    ******/
+.activites {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.cardactivite {
+    /*filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));*/
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.cardactivite img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 380px;
+}
+
+.cardactivite .card-content {
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px 19px;
+}
+
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -406,10 +436,16 @@ i.fa-solid.fa-magnifying-glass {
     .filterbar {
         flex-direction: column;
     }
+
+    /*****    activites    ******/
+    .cardactivite img {
+        height: 200px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     /***** populaires *****/
     .populaires-cards {
         width: 100%;
@@ -473,7 +509,12 @@ i.fa-solid.fa-magnifying-glass {
         padding: 30px;
         box-sizing: border-box;
     }
+
     /* search bar */
+    .searchbar-txt {
+        width: 100%;
+    }
+
     .searchbar-button span {
         display: none;
     }
@@ -492,8 +533,9 @@ i.fa-solid.fa-magnifying-glass {
     .div-filtre {
         flex-direction: column;
     }
+
     .filterbutton {
-        flex:1;
+        flex: 1;
     }
 
     /***** Hebergements ****/
@@ -505,9 +547,14 @@ i.fa-solid.fa-magnifying-glass {
         border-radius: 0px;
     }
 
-    .hebergements-and-populaires  section.hebergements {
+    .hebergements-and-populaires section.hebergements {
         order: 1;
         /*populaires has order 0 by default, hebergements with greater order displayed after*/
         background-color: white;
+    }
+    
+    /*****    activites    ******/
+    .cardactivite img {
+        height: 141px;
     }
 }
