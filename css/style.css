@@ -314,6 +314,7 @@ i.fa-solid.fa-magnifying-glass {
     display: flex;
     gap: 30px;
 }
+
 .cardmain {
     display: flex;
     flex-direction: column;
@@ -321,10 +322,12 @@ i.fa-solid.fa-magnifying-glass {
     min-width: 0;
     height: 207.25px;
 }
+
 .main-cards a {
-    display: flex; 
-    width: 100%;  
+    display: flex;
+    width: 100%;
 }
+
 .cardmain img {
     max-width: 100%;
     object-fit: cover;
@@ -408,6 +411,23 @@ i.fa-solid.fa-magnifying-glass {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+
+    /***** populaires *****/
+    .populaires-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .populaires-cards a {
+        display: flex;
+        width: 100%;
+    }
+    .populaires-cards .card {
+        width: 100%;
+    }
+
     /***** header *****/
     /* underline of .header-links */
     header {
@@ -473,8 +493,10 @@ i.fa-solid.fa-magnifying-glass {
     .main-cards {
         flex-direction: column;
     }
+
     .hebergements {
-        order : 1; /*populaires has order 0 by default, hebergements with greater order displayed after*/
+        order: 1;
+        /*populaires has order 0 by default, hebergements with greater order displayed after*/
     }
-    
+
 }
