@@ -425,6 +425,7 @@ i.fa-solid.fa-magnifying-glass {
     display: flex;
     padding: 30px;
     gap: 50px;
+    background-color: var(--main-bg-color);
 }
 
 .footer-div section {
@@ -448,6 +449,13 @@ i.fa-solid.fa-magnifying-glass {
 }
 
 /****** Media queries ***********/
+@media (min-width: 1440px) {
+    .main-container {
+       border-left : 1px solid var(--filter-bg-color);
+       border-right : 1px solid var(--filter-bg-color);
+    }
+}
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -627,6 +635,5 @@ i.fa-solid.fa-magnifying-glass {
     /*****    footer    ******/
     .footer-div {
         flex-direction: column;
-        background-color: var(--main-bg-color);
     }
 }
