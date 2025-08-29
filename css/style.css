@@ -7,6 +7,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --border-color: #D9D9D9;
 }
 
 .fa-solid {
@@ -145,7 +146,7 @@ header img {
 }
 
 .header-links:hover {
-    color: #0065FC;
+    color: var(--main-color);
 }
 
 /* overline of .header-links */
@@ -163,7 +164,7 @@ header img {
     /* shifts line to the top */
     height: 2px;
     /* line's thickness */
-    background: #0065FC;
+    background: var(--main-color);
     opacity: 0;
     /* non visible by default */
 }
@@ -181,7 +182,13 @@ main {
 }
 
 /***** Info group ****/
+.subtitle  {
+    margin:0;
+    padding: 0;
+}
 .info {
+    display:flex;
+    flex-direction: column;
     margin-top: 35px;
     gap: 35px;
 }
@@ -191,14 +198,13 @@ main {
     display: flex;
     border-radius: 15px;
     height: 49px;
-    margin: 24px 0px;
 }
 
 .searchbar i {
     width: 50px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -210,7 +216,7 @@ i.fa-solid.fa-location-dot {
 
 .searchbar-txt {
     background-color: white;
-    border: 1px solid #F2F2F2;
+    border: 1px solid var(--main-bg-color);
     outline: none;
     padding: 15px 16px;
 }
@@ -223,7 +229,7 @@ i.fa-solid.fa-location-dot {
     color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     border: none;
     outline: none;
     padding: 15px 16px;
@@ -244,7 +250,7 @@ i.fa-solid.fa-location-dot {
 
 i.fa-solid.fa-magnifying-glass {
     color: white;
-    background-color: #0065FC;
+    background-color: var(--main-color);
 }
 
 /* filter bar */
@@ -271,7 +277,7 @@ i.fa-solid.fa-magnifying-glass {
     justify-content: center;
     border-radius: 25px;
     padding: 15px; /*4px 19px;*/
-    border: 2px solid #D9D9D9;
+    border: 2px solid var(--border-color);
     gap: 10px;
 }
 
@@ -298,9 +304,9 @@ i.fa-solid.fa-magnifying-glass {
 
 .fa-circle-info {
     color: white;
-    background-color: #0065FC;
+    background-color: var(--main-color);
     border-radius: 50%;
-    border: 1px solid #D9D9D9;
+    border: 1px solid var(--border-color);
 }
 
 /***** Hebergements ****/
@@ -460,8 +466,14 @@ i.fa-solid.fa-magnifying-glass {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+    main {
+        gap: 0;
+    }
 
     /***** populaires *****/
+    .populaires {
+        margin:0;
+    }
     .populaires-cards {
         width: 100%;
         display: flex;
@@ -494,7 +506,7 @@ i.fa-solid.fa-magnifying-glass {
         /* décale la ligne vers le haut */
         height: 2px;
         /* épaisseur de la ligne */
-        background: #0065FC;
+        background: var(--main-color);
         opacity: 0;
         /* invisible par défaut */
     }
@@ -523,6 +535,7 @@ i.fa-solid.fa-magnifying-glass {
         background-color: white;
         padding: 30px;
         box-sizing: border-box;
+        margin : 0;
     }
 
     /* search bar */
@@ -541,7 +554,7 @@ i.fa-solid.fa-magnifying-glass {
     .searchbar-button {
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
-        box-shadow: 0 3px 0 0 #D9D9D9;
+        box-shadow: 0 3px 0 0 var(--border-color);
     }
 
     /* filter bar */
