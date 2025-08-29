@@ -182,12 +182,13 @@ main {
 }
 
 /***** Info group ****/
-.subtitle  {
-    margin:0;
+.subtitle {
+    margin: 0;
     padding: 0;
 }
+
 .info {
-    display:flex;
+    display: flex;
     flex-direction: column;
     margin-top: 35px;
     gap: 35px;
@@ -276,7 +277,8 @@ i.fa-solid.fa-magnifying-glass {
     align-items: center;
     justify-content: center;
     border-radius: 25px;
-    padding: 15px; /*4px 19px;*/
+    padding: 15px;
+    /*4px 19px;*/
     border: 2px solid var(--border-color);
     gap: 10px;
 }
@@ -387,8 +389,8 @@ i.fa-solid.fa-magnifying-glass {
 }
 
 .activites-cards a {
-    display: flex; 
-    width: 100%;  
+    display: flex;
+    width: 100%;
 }
 
 .cardactivite {
@@ -415,6 +417,33 @@ i.fa-solid.fa-magnifying-glass {
 }
 
 .card-content h3 {
+    margin: 0;
+}
+
+/*****    footer    ******/
+.footer-div {
+    display: flex;
+    padding: 30px;
+    gap: 50px;
+}
+
+.footer-div section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-div section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-div section h3 {
     margin: 0;
 }
 
@@ -472,8 +501,9 @@ i.fa-solid.fa-magnifying-glass {
 
     /***** populaires *****/
     .populaires {
-        margin:0;
+        margin: 0;
     }
+
     .populaires-cards {
         width: 100%;
         display: flex;
@@ -535,7 +565,7 @@ i.fa-solid.fa-magnifying-glass {
         background-color: white;
         padding: 30px;
         box-sizing: border-box;
-        margin : 0;
+        margin: 0;
     }
 
     /* search bar */
@@ -565,7 +595,7 @@ i.fa-solid.fa-magnifying-glass {
     .filterbutton {
         flex: 1;
     }
-    
+
     .filterbutton-txt {
         font-size: 14px;
     }
@@ -584,12 +614,19 @@ i.fa-solid.fa-magnifying-glass {
         /*populaires has order 0 by default, hebergements with greater order displayed after*/
         background-color: white;
     }
-    
+
     /*****    activites    ******/
     .activites-cards {
         flex-direction: column;
     }
+
     .cardactivite img {
         height: 141px;
+    }
+
+    /*****    footer    ******/
+    .footer-div {
+        flex-direction: column;
+        background-color: var(--main-bg-color);
     }
 }
