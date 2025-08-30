@@ -450,12 +450,12 @@ i.fa-solid.fa-magnifying-glass {
 }
 
 /****** Media queries ***********/
-@media (min-width: 1440px) {
+/*@media (min-width: 1440px) {
     .main-container {
        border-left : 1px solid var(--filter-bg-color);
        border-right : 1px solid var(--filter-bg-color);
     }
-}
+}*/
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -504,9 +504,6 @@ i.fa-solid.fa-magnifying-glass {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    main {
-        gap: 0;
-    }
 
     /***** populaires *****/
     .populaires {
@@ -572,8 +569,8 @@ i.fa-solid.fa-magnifying-glass {
     /***** Info group ****/
     .info {
         background-color: white;
-        padding: 30px;
         box-sizing: border-box;
+        padding: 30px;
         margin: 0;
     }
 
