@@ -127,6 +127,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: white;;
 }
 
 header nav ul {
@@ -174,11 +175,12 @@ header img {
     /* render line at hover */
 }
 
-/* main */
+/* body main-container main */
 main {
     display: flex;
     flex-direction: column;
     gap: 35px;
+    background-color: white;
 }
 
 /***** Info group ****/
@@ -381,6 +383,7 @@ i.fa-solid.fa-magnifying-glass {
     flex-direction: column;
     gap: 30px;
     padding: 30px;
+    background-color: white;
 }
 
 .activites-cards {
@@ -504,7 +507,10 @@ i.fa-solid.fa-magnifying-glass {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-
+    body {
+        background-color: var(--main-bg-color);
+    }
+    
     /***** populaires *****/
     .populaires {
         margin: 0;
