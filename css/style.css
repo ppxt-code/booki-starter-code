@@ -426,6 +426,7 @@ i.fa-solid.fa-magnifying-glass {
     padding: 30px;
     gap: 50px;
     background-color: var(--main-bg-color);
+    margin-top: 35px;
 }
 
 .footer-div section {
