@@ -609,6 +609,10 @@ i.fa-solid.fa-magnifying-glass {
         flex-direction: column;
     }
 
+    .div-filtre2 {
+        flex-wrap: wrap;
+    }
+    
     .filterbutton {
         flex: 1;
     }
