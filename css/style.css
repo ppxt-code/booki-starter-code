@@ -10,6 +10,11 @@
     --border-color: #D9D9D9;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .fa-solid {
     color: var(--main-color);
 }
@@ -433,14 +438,14 @@ i.fa-solid.fa-magnifying-glass {
     margin-top: 35px;
 }
 
-.footer-div section {
+.footer-div div {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.footer-div section ul {
+.footer-div div ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -449,17 +454,8 @@ i.fa-solid.fa-magnifying-glass {
     gap: 15px;
 }
 
-.footer-div section h3 {
-    margin: 0;
-}
 
 /****** Media queries ***********/
-/*@media (min-width: 1440px) {
-    .main-container {
-       border-left : 1px solid var(--filter-bg-color);
-       border-right : 1px solid var(--filter-bg-color);
-    }
-}*/
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -486,13 +482,13 @@ i.fa-solid.fa-magnifying-glass {
         width: 30%;
     }
 
-    .populaires-cards .card-title {
+    /*.populaires-cards .card-title {
         font-size: 14px;
     }
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
-    }
+    }*/
 
     /***** Info group ****/
     /* filter bar */
@@ -510,6 +506,10 @@ i.fa-solid.fa-magnifying-glass {
 @media (max-width: 767.98px) {
     body {
         background-color: var(--main-bg-color);
+    }
+
+    .main-container {
+        padding: 0;
     }
 
     /***** populaires *****/
