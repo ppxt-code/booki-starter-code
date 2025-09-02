@@ -483,6 +483,9 @@ i.fa-solid.fa-magnifying-glass {
         display: flex;
     }
 
+    .populaires-cards .card {
+        align-items: stretch;
+    }
     /*.populaires-cards .card-title {
         font-size: 14px;
     }
