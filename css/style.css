@@ -480,6 +480,7 @@ i.fa-solid.fa-magnifying-glass {
 
     .populaires-cards a {
         width: 30%;
+        display: flex;
     }
 
     /*.populaires-cards .card-title {
